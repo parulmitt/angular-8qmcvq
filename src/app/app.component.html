@@ -1,0 +1,33 @@
+<hello name="{{ name }}"></hello>
+
+<div>
+  <div>
+    Div
+  </div>
+  <div>
+    <input type="checkbox" [checked]="myVar1" (change)="myVar1 = !myVar1" /> Checked + Change
+  </div>
+  <div>
+    <input type="checkbox" [(ngModel)]="myVar1" /> NgModel
+  </div>
+  <div>
+    {{ myVar1 }}
+  </div>
+</div>
+
+<hr>
+
+<form>
+  <div>
+    Form
+  </div>
+  <div>
+    <input type="checkbox" [checked]="myVar2" (change)="myVar2 = !myVar2" /> Checked + Change
+  </div>
+  <div>
+    <input type="checkbox" [(ngModel)]="myVar2" [ngModelOptions]="{standalone: true}" /> NgModel
+  </div>
+  <div>
+    {{ myVar2 }}
+  </div>
+</form>
